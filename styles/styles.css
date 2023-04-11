@@ -1,0 +1,53 @@
+:root {
+    --white: #ffffff;
+    --grey: #414141;
+    --red: #d62d20;
+    --amarillo: #ffa700;
+    --blue: #3367d6;
+    --orange: #e34c26;
+    --green: #008744;
+    --blueReact: #61DBFB;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;   
+}
+
+html    {font-size: 62.5%; }
+h1      {font-size: 3.2rem;}
+h2      {font-size: 2rem;  }
+h3      {font-size: 1.9rem;}
+h4      {font-size: 1.6rem;}
+p       {font-size: 1.6rem;}
+label   {font-size: 2rem;  }
+option  {font-size: 2rem;  }
+
+.header {
+    background-color: red;
+    height: 10rem;
+    width: 100%;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    padding: 0 30px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.home__background {
+    background-image: url(../img/Background-1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
