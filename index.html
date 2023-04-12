@@ -10,22 +10,98 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-        <p>a</p>
+            <a href="#home" class="logo nav-link">Tec</a>
+            <button class="nav-toggle" arial-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu"> 
+                <li class="nav-menu-item">
+                    <a href="nav-menu-link nav-link">Inicio</a> 
+                </li>
+                <li class="nav-menu-item">
+                    <a href="" class="nav-menu-link nav-link">Sobre Mi</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="" class="nav-menu-link nav-link">Servicios</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="" class="nav-menu-link nav-link">Portafolio</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="" class="nav-menu-link nav-link">Contacto</a>
+                </li>
+                <li class="nav-menu-item">
+                    <span class="es">Spanish</span>
+                    <input type="checkbox" class="check">
+                    <span class="en">English</span>
+                </li>
+            </ul>
         </nav>
     </header>
+
     <main id="main">
         <section class="home">
-            <video id="video-background" preload="auto" autoplay="true" loop="loop" muted="muted">
+            <!--<video id="video-background" preload="auto" autoplay="true" loop="true" muted="true">
                 <source src="./img/video-bg.mp4" type="video/mp4">
-              </video>
+              </video>-->
+              <div class="home__description">
+                <span class="home__title--primary">Hola!</span>
+                <h1 class="home__title"> Me llamo</h1>
+                <span class="home__title--secondary">Y soy Desarollador Web Front-End</span>
+              </div>
         </section>
-        <section>
-            <h2>Sobre mi</h2>
-        </section>
-        <section>
-            <h2>Sobre mi</h2>
+
+        <!-- porque se llaman igual?-->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="about__title"> Sobre Mi </h2>
+                <div class="about__grid">
+                    <div class="about__description">
+                        <h2>Soy Pol Valle, Desarrollador Web Front-End / Técnico Informático. </h2>
+                        <p>Soy un desarrollador con experiencia en la creación de sitios web. Siempre busco mejorar mis habilidades y seguir creciendo profesionalmente para poder hacer aportes valiosos al grupo de trabajo del que formo parte. Soy una persona crítica e ingeniosa que busca construir proyectos que brinden satisfacción de acuerdo a las necesidades e intereses de las personas.</p>
+                        <a href="./assets/0-CV-Pol-Valle.pdf" class="about__button--cv" download="Pol Valle CV">
+                            <span><i class="fa-sharp fa-solid fa-file-arrow-down"></i></span> Descargar CV
+                        </a>
+                    </div>
+                    <!-- cambiar esta parte para renderizarla con JS y no tenerlo Hardcodeado -->
+                    <div class="about__skills">
+                        <div class="skill__title">
+                            <h2>Mis habilidades</h2>
+                        </div>
+                        <div class="skill__item">
+                            <img src="./img/icon_html5.png" alt="icono">
+                            <div class="skill__name">HTML 5</div>
+                        </div>
+                        <div class="skill__item">
+                            <img src="./img/icon_css.png" alt="icono">
+                            <div class="skill__name">CSS 3</div>
+                        </div>
+                        <div class="skill__item">
+                            <img src="./img/icon_javascript.png" alt="icono">
+                            <div class="skill__name">JavaScript</div>
+                        </div>
+                        <div class="skill__item">
+                            <img src="./img/icon_bootstrap.png" alt="icono">
+                            <div class="skill__name">Bootstrap</div>
+                        </div>
+                        <div class="skill__item">
+                            <img src="./img/git_logo_icon.png" alt="icono">
+                            <div class="skill__name">GIT</div>
+                        </div>
+                        <div class="skill__item">
+                            <img src="./img/github-logo_icon.png" alt="icono">
+                            <div class="skill__name">GitHub</div>
+                        </div>
+                        <div class="skill__item">
+                            <img src="./img/sass_icon.png" alt="icono">
+                            <div class="skill__name">SASS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer></footer>
 </body>
 </html>
