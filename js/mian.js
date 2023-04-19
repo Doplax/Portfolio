@@ -32,7 +32,7 @@ function handleLanguage() {
 }
 
 function renderSkills(skills) {
-    const skillsContainer = document.querySelector(".about__skills");
+    const skillsContainer = document.querySelector(".skill__list");
 
     skills.forEach((skill) => {
         const div = document.createElement('div');

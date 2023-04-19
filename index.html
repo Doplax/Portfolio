@@ -4,26 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/ico/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/ico/favicon-16x16.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">    
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Pol Valle Portfolio</title>
 
 </head>
 <body>
     <header class="header">
         <nav class="header__nav">
-            <a href="#home" class="logo nav-link">Tec</a>
+            <a href="#home" class="logo nav-link">Doplax.Dev</a>
             <button class="nav-toggle" arial-label="Abrir menu">
                 <i class="fas fa-bars"></i>
             </button>
@@ -43,12 +37,18 @@
                 <li class="nav-menu-item">
                     <a href="" class="nav-menu-link nav-link">Contacto</a>
                 </li>
-                <li class="nav-menu-item">
+                <li>
+                    <span class="nav-menu-item"></span>
+                </li>
+                <li>
                     <span class="es">Spanish</span>
-                    <input type="checkbox" class="check">
+                        <input type="checkbox" class="check">
                     <span class="en">English</span>
                 </li>
             </ul>
+            <div>
+                
+            </div>
         </nav>
     </header>
 
@@ -60,9 +60,12 @@
                 </video>
             </div>
             <div class="home__description">
-                <span class="home__title--primary">Hola!</span>
-                <h1 class="home__title"> Me llamo</h1>
-                <span class="home__title--secondary">Y soy Desarollador Web Front-End</span>
+                <img class="home__img" src="./img/foto-perfil.png" alt="">
+                <div class="home__container">
+                    <span class="home__title--primary">Hola!</span>
+                    <h1 class="home__title"> Me llamo</h1>
+                    <span class="home__title--secondary">Y soy Desarollador Web Front-End</span>
+                </div>
             </div>
         </section>
 
@@ -80,8 +83,9 @@
                     </div>
                     <!-- cambiar esta parte para renderizarla con JS y no tenerlo Hardcodeado -->
                     <div class="about__skills">
-                        <div class="skill__title">
-                            <h2>Mis habilidades</h2>
+                        <h2 class="skill__title">Mis habilidades</h2>
+
+                        <div class="skill__list">
                         </div>
                         <!--<div class="skill__item">
                             <img src="./img/icon_html5.png" alt="icono">
@@ -92,8 +96,8 @@
             </div>
         </section>
 
-        <section id="service" class="main__service">
-            <div class="main__container">
+        <section class="main__service">
+            <div class="service__container">
                 <h2 class="section__tittle">Servicios</h2>
                 <h3 class="section__subtitle">Servicios que ofrezco a mis clientes</h3>
                 <div class="services__grid">
